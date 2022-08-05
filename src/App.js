@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './home.component';
+import Employee from './employe.component';
+import Employes from './employes.component';
+import Empoloyeeimg from './employeimg.component';
+import List from './listofemployes.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<Welcome name="znavo"/>
+<Employee fname="avi" lname="meko" birthday="31/45/12" pic="logo192.png"/>
+<Employes/>
+<div>
+<Empoloyeeimg url="./logo192.png"/>
+<List/>
+</div>
+</>
   );
 }
 
